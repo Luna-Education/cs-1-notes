@@ -1,0 +1,124 @@
+/* ---------- Colors ---------- */
+
+:root {
+  --codapi-bg: #f6f8fa;
+  --codapi-border: #d0d7de;
+  --codapi-text: #24292f;
+  --codapi-muted: #57606a;
+  --code-border: #8c959f;
+}
+
+/* Light code theme (GitHub Light colors) */
+:root[data-theme="light"] {
+  --codeblock-bg: #f6f8fa;
+  --codeblock-color: #1f2328;
+  --codeblock-comment: #59636e;
+  --codeblock-function: #6639ba;
+  --codeblock-important: #cf222e;
+  --codeblock-keyword: #cf222e;
+  --codeblock-operator: #0550ae;
+  --codeblock-property: #0550ae;
+  --codeblock-punctuation: #1f2328;
+  --codeblock-selector: #0a3069;
+  --codeblock-tag: #0550ae;
+  --codeblock-variable: #953800;
+}
+
+:root[data-theme="dark"] {
+  --codapi-bg: #161b22;
+  --codapi-border: #30363d;
+  --codapi-text: #c9d1d9;
+  --codapi-muted: #8b949e;
+  --code-border: #6e7681;
+}
+
+/* ---------- Theme toggle button ---------- */
+
+#theme-toggle {
+  position: fixed;
+  top: 12px;
+  right: 16px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--code-border);
+  border-radius: 50%;
+  background: var(--codapi-bg);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  filter: brightness(1.15);
+}
+
+/* ---------- Code blocks ---------- */
+
+.markdown-section pre[data-lang] {
+  border: 1px solid var(--code-border);
+}
+
+/* ---------- Codapi toolbar ---------- */
+
+/* .markdown-section prefix is needed to beat docsify's button styles */
+.markdown-section codapi-toolbar button {
+  padding: 0.35em 1em;
+  border: none;
+  border-radius: 6px;
+  background: var(--theme-color, #0b85ff);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.markdown-section codapi-toolbar button:hover {
+  filter: brightness(1.1);
+}
+
+.markdown-section codapi-toolbar button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+codapi-toolbar a {
+  color: var(--theme-color, #0b85ff);
+}
+
+codapi-status {
+  color: var(--codapi-muted);
+  font-size: 0.9em;
+}
+
+/* ---------- Codapi output panel ---------- */
+
+codapi-output {
+  margin-top: 0.5em;
+  border: 1px solid var(--codapi-border);
+  border-radius: 6px;
+  background: var(--codapi-bg);
+}
+
+.markdown-section codapi-output pre {
+  margin: 0;
+  padding: 1em;
+  background: transparent;
+  color: var(--codapi-text);
+}
+
+/* Undo docsify's inline-code chip styling inside output */
+.markdown-section codapi-output pre code {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+}
+
+codapi-output a[href="#close"] {
+  color: var(--codapi-muted);
+  text-decoration: none;
+}

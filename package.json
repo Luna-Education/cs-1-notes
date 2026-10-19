@@ -1,0 +1,13 @@
+{
+  "name": "cs-1-notes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Notes for an introductory computer science course, with runnable C and C++ examples.",
+  "license": "ISC",
+  "scripts": {
+    "docs": "docsify serve ./docs"
+  },
+  "devDependencies": {
+    "docsify-cli": "^5.0.0"
+  }
+}
