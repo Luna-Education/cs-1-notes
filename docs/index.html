@@ -1,57 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CS 1 C Programming Notes</title>
+    <meta
+      name="description"
+      content="Notes for an introductory computer science course, with runnable C and C++ examples."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <title>CS 1 Notes</title>
-  <meta name="description" content="Notes for an introductory computer science course, with runnable C and C++ examples.">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <!-- Docsify themes -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/addons/vue.min.css"
+    />
+    <link
+      id="dark-theme"
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/addons/core-dark.min.css"
+      media="(prefers-color-scheme: dark)"
+    />
 
-  <!-- Docsify themes -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/addons/vue.min.css">
-  <link id="dark-theme" rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/addons/core-dark.min.css"
-    media="(prefers-color-scheme: dark)" />
+    <!-- KaTeX -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+    />
 
-  <!-- Codapi -->
-  <link rel="stylesheet" href="https://unpkg.com/@antonz/codapi@0.20.0/dist/snippet.css" />
+    <!-- Codapi -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@antonz/codapi@0.20.0/dist/snippet.css"
+    />
 
-  <!-- Site styles and theme toggle (theme.js must run before paint) -->
-  <link rel="stylesheet" href="assets/css/custom.css">
-  <script src="assets/js/theme.js"></script>
-</head>
+    <!-- Site styles and theme toggle (theme.js must run before paint) -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <script src="assets/js/theme.js"></script>
+  </head>
 
-<body>
-  <button id="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
-  <div id="app"></div>
+  <body>
+    <button
+      id="theme-toggle"
+      type="button"
+      aria-label="Toggle dark mode"
+    ></button>
+    <div id="app"></div>
 
-  <script>
-    window.$docsify = {
-      name: 'CS 1 Notes',
-      repo: '',
-      loadSidebar: true,
-      search: {
-        paths: 'auto', // index every page linked from the sidebar
-        placeholder: 'Search notes',
-        noData: 'No results',
-        depth: 3, // index headings down to ###
-        namespace: 'cs-1-notes',
-        maxAge: 3600000, // rebuild the cached index after 1 hour
-        resultSource: 'page',
-      },
-    };
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@5"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/plugins/search.min.js"></script>
+    <script>
+      window.$docsify = {
+        name: "C Programming Notes",
+        repo: "",
+        loadSidebar: true,
+        search: {
+          paths: "auto", // index every page linked from the sidebar
+          placeholder: "Search notes",
+          noData: "No results",
+          depth: 3, // index headings down to ###
+          namespace: "cs-1-notes",
+          maxAge: 3600000, // rebuild the cached index after 1 hour
+          resultSource: "page",
+        },
+      };
+    </script>
+    <!-- KaTeX math ($inline$ and $$display$$); math.js registers a Docsify plugin -->
+    <script src="//cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script src="assets/js/math.js"></script>
 
-  <!-- Prism syntax highlighting for C and C++ (cpp depends on c) -->
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-c.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-cpp.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@5"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/plugins/search.min.js"></script>
 
-  <!-- Codapi runnable snippets -->
-  <script defer src="https://unpkg.com/@antonz/codapi@0.20.0/dist/snippet.js"></script>
-  <codapi-settings url="https://codapi.lunaghs.dev/v1"></codapi-settings>
-  <script src="assets/js/editor.js"></script>
-</body>
+    <!-- Prism syntax highlighting for C, C++ and C# (cpp depends on c) -->
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-c.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-cpp.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-csharp.min.js"></script>
 
+    <!-- Codapi runnable snippets -->
+    <script
+      defer
+      src="https://unpkg.com/@antonz/codapi@0.20.0/dist/snippet.js"
+    ></script>
+    <codapi-settings url="https://codapi.lunaghs.dev/v1"></codapi-settings>
+    <script src="assets/js/editor.js"></script>
+  </body>
 </html>

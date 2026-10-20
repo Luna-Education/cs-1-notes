@@ -122,3 +122,17 @@ codapi-output a[href="#close"] {
   color: var(--codapi-muted);
   text-decoration: none;
 }
+
+/* Wrap content in <div class="center"> to center it (tables shrink to fit
+   their content and still scroll sideways on narrow screens) */
+.markdown-section .center {
+  text-align: center;
+}
+
+.markdown-section table {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+  margin-inline: auto;
+}

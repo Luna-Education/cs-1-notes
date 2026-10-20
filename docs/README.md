@@ -1,4 +1,4 @@
-# CS 1 Notes
+# CS 1 C Programming Notes
 
 Notes for an introductory computer science course, with code you can run right in the page.
 
@@ -34,13 +34,13 @@ int main() {
 
 ## Using the code editor
 
-| Action | Shortcut |
-|---|---|
-| Run the code | Click **Run**, or <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>Enter</kbd> |
-| Undo | <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>Z</kbd> |
-| Redo | <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> |
-| Indent | <kbd>Tab</kbd> |
-| Hide the output | <kbd>Esc</kbd> |
+| Action          | Shortcut                                                          |
+|-----------------|-------------------------------------------------------------------|
+| Run the code    | Click **Run**, or <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>Enter</kbd> |
+| Undo            | <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>Z</kbd>                       |
+| Redo            | <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd>    |
+| Indent          | <kbd>Tab</kbd>                                                    |
+| Hide the output | <kbd>Esc</kbd>                                                    |
 
 To start over, reload the page. Use the ☀️/🌙 button in the top-right corner to switch between light and dark mode.
 
