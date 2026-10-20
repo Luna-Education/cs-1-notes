@@ -40,7 +40,10 @@ int main(void) {
 ```
 <codapi-snippet sandbox="gcc" editor="full"></codapi-snippet>
 
+> We will be using C11, so you have to include `stdbool.h` Most projects still don't use C23, and most projects use either C99 or C11, so we'll stick with that for this class.
+
 There is still no format specifier for booleans, so we have to use the trick above to print out "true"/"false".
+
 
 # Boolean Expressions
 
