@@ -1,3 +1,11 @@
+/* ---------- Fonts ---------- */
+
+:root {
+  --font-family: "Lexend", system-ui, sans-serif;
+  --font-family-mono: "Atkinson Hyperlegible Mono", ui-monospace, "Cascadia Code",
+    Consolas, monospace;
+}
+
 /* ---------- Colors ---------- */
 
 :root {
@@ -6,6 +14,11 @@
   --codapi-text: #24292f;
   --codapi-muted: #57606a;
   --code-border: #8c959f;
+}
+
+/* Off-white page background in light mode (easier on the eyes than #fff) */
+:root[data-theme="light"] {
+  --color-bg: #faf8f3;
 }
 
 /* Light code theme (GitHub Light colors) */
@@ -57,10 +70,104 @@
   filter: brightness(1.15);
 }
 
+/* ---------- Font settings (added by font-settings.js) ---------- */
+
+#settings-toggle {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--code-border);
+  border-radius: 50%;
+  background: var(--codapi-bg);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#settings-toggle:hover {
+  filter: brightness(1.15);
+}
+
+#settings-panel {
+  position: fixed;
+  bottom: 64px;
+  left: 16px;
+  z-index: 100;
+  display: grid;
+  gap: 0.35em;
+  width: min(260px, calc(100vw - 32px));
+  padding: 1em;
+  border: 1px solid var(--code-border);
+  border-radius: 8px;
+  background: var(--codapi-bg);
+  color: var(--codapi-text);
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.2);
+}
+
+#settings-panel[hidden] {
+  display: none;
+}
+
+#settings-panel label {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+#settings-panel select {
+  margin-bottom: 0.6em;
+  padding: 0.35em 0.5em;
+  border: 1px solid var(--code-border);
+  border-radius: 6px;
+  background: var(--codeblock-bg, var(--codapi-bg));
+  color: inherit;
+  font: inherit;
+}
+
+#settings-panel select:last-child {
+  margin-bottom: 0;
+}
+
+/* Keep the last sidebar links clear of the gear */
+.sidebar-nav {
+  padding-bottom: 72px;
+}
+
 /* ---------- Code blocks ---------- */
 
 .markdown-section pre[data-lang] {
   border: 1px solid var(--code-border);
+}
+
+/* Line-number gutter (added by line-numbers.js) */
+.markdown-section pre.has-line-numbers {
+  display: flex;
+}
+
+.markdown-section pre.has-line-numbers > code {
+  flex: 1;
+  min-width: 0;
+  padding-inline-start: 1rem !important;
+}
+
+.markdown-section pre .line-numbers {
+  flex: none;
+  padding-block: 1.5rem;
+  padding-inline: 1rem 0.75rem;
+  border-right: 1px solid var(--code-border);
+  color: var(--codeblock-comment);
+  text-align: right;
+  user-select: none;
+}
+
+.markdown-section pre .line-numbers > span {
+  display: block;
 }
 
 /* ---------- Codapi toolbar ---------- */
