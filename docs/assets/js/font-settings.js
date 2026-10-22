@@ -45,6 +45,12 @@
           href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap',
         },
         {
+          id: 'opendyslexic-mono',
+          name: 'OpenDyslexic Mono',
+          stack: '"OpenDyslexic Mono", ui-monospace, "Cascadia Code", Consolas, monospace',
+          href: 'assets/css/opendyslexic-mono.css',
+        },
+        {
           id: 'system',
           name: 'System default',
           stack: 'ui-monospace, "Cascadia Code", Consolas, monospace',
