@@ -24,7 +24,7 @@
 /* Light code theme (GitHub Light colors) */
 :root[data-theme="light"] {
   --codeblock-bg: #f6f8fa;
-  --codeblock-color: #1f2328;
+  --codeblock-color: #000;
   --codeblock-comment: #59636e;
   --codeblock-function: #6639ba;
   --codeblock-important: #cf222e;
@@ -43,6 +43,7 @@
   --codapi-text: #c9d1d9;
   --codapi-muted: #8b949e;
   --code-border: #6e7681;
+  --codeblock-color: #fff;
 }
 
 /* ---------- Theme toggle button ---------- */

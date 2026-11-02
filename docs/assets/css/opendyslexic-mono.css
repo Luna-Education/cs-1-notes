@@ -1,0 +1,10 @@
+/* OpenDyslexic Mono (loaded by font-settings.js only when picked). No CDN
+   ships a stylesheet for it, so this points at the font file directly. */
+@font-face {
+  font-family: "OpenDyslexic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/otf/OpenDyslexicMono-Regular.otf)
+    format("opentype");
+}
