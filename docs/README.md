@@ -30,7 +30,11 @@ int main() {
 
 ### Fundamentals of C
 
+- [Basics](foundation/basics.md)
+- [Console I/O](input-output/console-io.md)
+- [Boolean Expressions](boolean-expressions/bool.md)
 - [If Statements](conditionals/if-statements.md)
+- [Simple Functions and Global Variables](functions/simple_functions_and_global_vars.md)
 
 ## Using the code editor
 
