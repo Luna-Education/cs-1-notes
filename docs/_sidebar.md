@@ -11,3 +11,5 @@
   - [Loops](./loops/loops.md)
     - [While Loops](./loops/while-loops.md)
     - [For Loops](./loops/for-loops.md)
+    - [Do While Loops](./loops/do-while.md)
+  - [Pointers](./memory/pointers.md)

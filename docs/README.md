@@ -35,6 +35,12 @@ int main() {
 - [Boolean Expressions](boolean-expressions/bool.md)
 - [If Statements](conditionals/if-statements.md)
 - [Simple Functions and Global Variables](functions/simple_functions_and_global_vars.md)
+- [Function Parameters](functions/functions_with_parameters.md)
+- [Loops](loops/loops.md)
+  - [While Loops](loops/while-loops.md)
+  - [For Loops](loops/for-loops.md)
+  - [Do While Loops](loops/do-while.md)
+- [Pointers](memory/pointers.md)
 
 ## Using the code editor
 
